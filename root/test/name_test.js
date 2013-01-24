@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-var {%= js_test_safe_name %} = require('../lib/{%= name %}.js');
+var {%= js_test_safe_name %} = require("../lib/{%= name %}.js");
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -22,15 +22,15 @@ var {%= js_test_safe_name %} = require('../lib/{%= name %}.js');
     test.ifError(value)
 */
 
-exports['awesome'] = {
+exports["awesome"] = {
   setUp: function(done) {
     // setup here
     done();
   },
-  'no args': function(test) {
+  "no args": function(test) {
     test.expect(1);
     // tests here
-    test.equal({%= js_test_safe_name %}.awesome(), 'awesome', 'should be awesome.');
+    test.equal({%= js_test_safe_name %}.awesome(), "awesome", "should be awesome.");
     test.done();
   },
 };
